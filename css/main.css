@@ -1,0 +1,94 @@
+/* start of global rules */
+body, body * {
+    margin: 0;
+    padding: 0;
+    -moz-question-sizing: border-question;
+    -webkit-question-sizing: border-question;
+    box-sizing: border-question;
+}
+/* end of global rules */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6200ee;
+    color: white;
+}
+
+::selection {
+    color: #6200ee;
+    background-color: #eee;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    margin: auto;
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .question {
+    background-color: white;
+    padding: 24px 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container .question .question-section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.container .question .question-section .icon button{
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    color: #6200ee;
+    cursor: pointer;
+}
+
+/* classes to change plus icon state */
+.container .question .question-section .icon .plus.hide-plus {
+    display: none;
+}
+
+.container .question .question-section .icon .minus {
+    display: none;
+}
+
+/* classes to change minus icon state */
+.container .question .question-section .icon .minus.show-minus {
+    display: block;
+}
+
+.container .question .answer-section {
+    display: none;
+}
+
+.container .question .answer-section p{
+    margin-top: 13px;
+    padding-left: 10px;
+}
+
+.container .question .answer-section p > a {
+    color: #6200ee;
+    font-family: cursive;
+}
+
+.container .question .answer-section.show-answer {
+    display: block;
+}
+
